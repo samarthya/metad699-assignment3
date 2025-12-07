@@ -1,5 +1,13 @@
 # AD699 Assignment 3: Classification Trees & Random Forests
 
+Understand how tree-based methods work, their strengths/weaknesses, and when to use ensemble methods.
+
+## Scenario 
+
+You're hired as a Data Analyst at the Department of Education. Your boss says: "We need to predict which colleges will have high enrollment rates (yield) to allocate marketing funds effectively."
+
+Your Mission: Use historical data to build a prediction model.
+
 ## Course: AD699 (Predictive Analytics)
 
 ## Project Overview
@@ -27,3 +35,20 @@ Predict college enrollment yield using decision trees and random forests. The wo
 
 - Random seed is set to `SEED = 750` for reproducibility.
 - Plots and metrics are generated on the provided dataset; rerun notebooks if data changes.
+
+## What is a decision tree?
+
+
+| Concept | Analogy | Key Takeaway |
+|:---|:---|:---|
+| Single Decision Tree | The Single Expert: You ask one hiring manager to decide on a candidate. They create a flow chart of rules: Is their GPA > 3.5? If yes, is their experience > 3 years? If yes, Hire. | Fast and Simple. But if their rules are too rigid, they might miss a great candidate (or hire a bad one) if the candidate's profile is slightly unusual. |
+| Random Forest| The Hiring Committee: You gather 100 hiring managers. Each one gets a slightly different resume and focuses on a different set of skills. They all vote. You go with the majority decision. | Slower, but Far More Reliable. The combined wisdom cancels out the individual mistakes or biases of any single manager. |
+
+
+## Classification problem
+
+Shape - 776x18 
+
+INPUT: College characteristics (features)
+PROCESS: Machine learning model
+OUTPUT: HIGH or LOW (class label)
