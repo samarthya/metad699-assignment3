@@ -7,6 +7,8 @@
 
 # %% [markdown]
 # ## Setup
+# 
+# Load all the libraries and configure as needed.
 
 # %%
 # Core libraries
@@ -30,7 +32,7 @@ sns.set_style('whitegrid')  # Consistent plot aesthetics
 # Save the plots in this directory
 os.makedirs('outputs', exist_ok=True)
 
-# Random seed - CHANGE TO YOUR BU ID LAST 3 DIGITS
+# Random seed
 SEED = 750
 
 # %% [markdown]
@@ -58,6 +60,7 @@ df.sample(5)
 print("Dataset Information:")
 print(f"  - {len(df)} colleges")
 print(f"  - {len(df.columns)} variables")
+
 print(f"\nVariables: {list(df.columns)}")
 
 # %%
